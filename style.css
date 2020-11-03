@@ -1,0 +1,43 @@
+*,*:before *:after{
+	box-sizing: border-box;
+}
+
+figure{
+width: 300px;
+height: 300px;
+background-color:#8B0000;
+color:#fff;
+display: flex;
+align-items: center;
+text-align: center;
+position: relative;
+justify-content: center;
+}
+figure:before{
+	content: '';
+	position: absolute;
+	top: 5%;
+	right:5%;
+	bottom: 5%;
+	left: 5%;
+	border-top: solid 2px;/*верхня лінія*/
+	border-bottom: solid 2px;
+	transition: 0.2s;
+	transform: scaleX(0);
+}
+figure h1{
+	transition: 0.2s;
+	transform: translateY(20px);
+}
+figure p{
+	transition: 0.2s;
+	transform: translateY(20px);
+	opacity: 0;
+	visibility: hidden;
+}
+figure:hover h2,
+figure:hover p{
+	transform: translate(Y);
+	opacity: 1;
+	visibility:visible;
+}
